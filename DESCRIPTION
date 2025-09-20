@@ -1,0 +1,40 @@
+Package: boxTest
+Type: Package
+Title: Boxplot and Significance Test for Two Groups
+Version: 0.1.0
+Authors@R: 
+    c(
+      person("Arkaprabha", "Sau", 
+             email = "arka.doctor@gmail.com", 
+             role = c("aut", "cre")),
+      person("Santanu", "Phadikar", 
+             email = "phadikar@gmail.com", 
+             role = "aut"),
+      person("Ishita", "Bhakta", 
+             email = "ishita.official@gmail.com", 
+             role = "aut")
+    )
+Description: 
+    Creates a side-by-side boxplot for a continuous variable 
+    grouped by a two-level categorical variable, checks normality 
+    assumptions, and runs the appropriate statistical test 
+    (t-test or Wilcoxon rank-sum test). Returns a publication-ready plot 
+    and test statistics including test statistic, degrees of freedom, 
+    and p-value.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6)
+Imports: 
+    ggplot2,
+    dplyr,
+    stats,
+    rlang
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Config/testthat/edition: 3
